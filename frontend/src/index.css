@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styling */
+body {
+  @apply bg-background text-gray-800;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+/* Professional input styling */
+.input {
+  @apply w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition;
+}
+
+.input-error {
+  @apply border-danger focus:ring-danger;
+}
+
+/* Button styling */
+.btn-primary {
+  @apply w-full bg-primary text-white py-2 rounded-lg font-semibold hover:bg-primaryHover transition;
+}
+
+.btn-success {
+  @apply w-full bg-success text-white py-2 rounded-lg font-semibold hover:opacity-90 transition;
+}
+
+.card {
+  @apply bg-card shadow-lg rounded-xl p-6;
+}
